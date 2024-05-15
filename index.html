@@ -6,27 +6,46 @@
 <head>
     <meta charset="utf-8" /> <!--codificación-->
     <meta name="viewport" content="width=device-width"><!--el sitio queremos que sea adaptable, que se vea en cualquier dispositivo (el ancho de la página se adapta al móvil)-->
-    <title>Portfolio Vanesa</title> <!--importante para el seo de google, es importante poner un titulo llamativo-->
+    <title>Portfolio Vanesa - frontend developer</title> <!--importante para el seo de google, es importante poner un titulo llamativo-->
     
-    <meta name="description" content="Portfolio de Vanesa, con 3 años de experiencia en desarrollo">
+    <meta name="description" content="Portfolio de Vanesa, con 3 años de experiencia en desarrollo"> <!--descripción de la pagína, es lo que aparece en la pa´gina principal de google (puede ser que google lo cambie)-->
     
     <!--OPEN GRAPH-->
     
-    <meta property="og:title" content="Portfolio de Vanesa, con 3 años de experiencia en desarrollo">
+    <meta property="og:title" content="Portfolio de una desarrolladora web"> <!--si no ponemos esta etiqueta, cogera lo que hemos puesto en title-->
+    <meta property="og:description" content="Portfolio de de Vanesa, con 3 años de experiencia en desarrollo web"> <!--lo que aparece justo debajo del titulo nuestro de google-->
+    <meta property="og:image" content="/images/vane.jpg"> <!--imagen en google-->
+    <meta property="og:image:alt" content="una fotografia de Vanesa"> <!--descripción de la imagen-->
+    
+
+    <!--por tema de SEO-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/" hredlang="en-GB"> <!--le esta diciendo a google que puede encontrar mi página en ingles con el mismo contenido pero traducido (ingles del reino unido), si no la ponemos, puede detectar contenido duplicado-->
+    <link rel="canonical" href="https://maxcdn.bootstrapcdn"> <!--esta es la página original-->
+
     <meta name="robots" content="index, follow"><!--importante para google-->    
     <meta name="theme-color" content="#09f"> <!--metadatos-->
 
-    <link rel="icon" type="image/jpg" href="/images/vane.jpg">
+    <link rel="icon" type="image/jpg" href="/images/vane.jpg"> <!--favicon-->
 <body>
-    <h1>Portfolio de Vanesa Jover</h1>
+    <header>
+        <h1>Portfolio de Vanesa Jover</h1>
 
-    <p>+13 años como <strong>técnica de recursos humanos</strong> y estudiando y aprendiendo <strong>desarrollo web</strong> desde hace 3 años.</p>
+    <nav>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="https://github.com/vanejogaa">Github</a>
+    </nav>
+    </header>
+  
+    <main>
+
+    <p>Estudiando y aprendiendo <strong>desarrollo web</strong> desde hace 3 años.</p>
 
 <h2>Experiencia</h2>
 <ul>
-    <li class="list-item">ABG Manresa - 2015</li>
-    <li class="list-item">ETALENTUM - 2021</li>
     <li class="list-item">Rossignol - 2023 (actualmente)</li>
+    <li class="list-item">ETALENTUM - 2021</li>
+    <li class="list-item">ABG Manresa - 2015</li>
 </ul>
 <img 
 width="200"
@@ -38,12 +57,33 @@ src="/images/vane.jpg">
 
 <h2>Formación</h2>
 <ul>
+    <li>Frontend Developer (upgrade hub)</li>
+    <li>Introducción a la programación (fundaula)</li>
+    <li>Introducción a la base de datos de Microsoft SQL Server (Grupo IOE)</li>
+    <li>Creación y mantenimiento de páginas web, Informática (Grupo IOE)</li>
     <li>Grado en Relaciones Laborales - UOC</li>
     <li>CFGS Administración y finanzas</li>
     <li>CFGM Administración</li>
 </ul>
 
+<aside>
+    <header>
+        <h3>Mis tecnologías favoritas</h3>
+    </header>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Node.js</li>
+    </ol>
+</aside>
+
 <h2>Contacto</h2>
 <button type="submit">Enviar contacto</button>
-    </body>
+    </body> 
 </head>
+</main>
+
+<footer>
+    Copyright 2024 
+</footer>
