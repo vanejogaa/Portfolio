@@ -38,12 +38,12 @@
         rel="noreferrer">Github</a> <!--por seguridad, no envia la cabecera de referrer-->
     </nav>
     </header>
+
+    <video autoplay muted src="https://www.youtube.com/watch?v=MEuZICEDLJo"></video>
   
     <main>
 
     <p>Estudiando y aprendiendo <strong>desarrollo web</strong> desde hace 3 años.</p>
-
-<video autoplay muted src="https://www.youtube.com/watch?v=MEuZICEDLJo"></video>
 
     <h2 id="experiencia">Experiencia</h2>
 <ul>
@@ -61,7 +61,7 @@ src="/images/vane.jpg">
 
 <h2 id="formación">Formación</h2>
 <ul>
-    <li>Frontend Developer (upgrade hub)</li>
+    <li>Bootcamp Frontend Developer (upgrade hub)</li>
     <li>Introducción a la programación (fundaula)</li>
     <li>Introducción a la base de datos de Microsoft SQL Server (Grupo IOE)</li>
     <li>Creación y mantenimiento de páginas web, Informática (Grupo IOE)</li>
@@ -105,11 +105,43 @@ src="/images/vane.jpg">
             <input type="tel" id="telefono" name="telefono" placeholder="659856306" required>
         </fieldset>
 
+        <legend>Otros</legend>
+
+        <div>
+            <label for="why">¿Por qué quieres contactar?</label>
+            <select name="why" id="why">
+                <option value="1">Trabajo</option>
+                <option value="2">Duda</option>
+                <option value="3">Más información</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="terms">¿Aceptas los términos?</label>
+            <input type="checkbox" id="terms" name="terms" required>
+        </div>
+        <br>
+
+        <div>
+            <datalist id="languages">
+                <option value="JavaScript"></option>
+                <option value="Python"></option>
+                <option value="Java">Java</option>
+            </datalist>
+            <label>
+                ¿Con qué lenguaje quieres que te ayude?
+                <input list="languages" name="languages">
+            </label>
+        </div>
+
+
+
         <input type="submit" value="Enviar contacto">
     </form>
 </section>
 </main>
-
+<br>
+<br>
 <footer>
     Copyright 2024 
 
